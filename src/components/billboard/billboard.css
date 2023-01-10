@@ -1,0 +1,35 @@
+.billboard {
+    padding: 0.75rem 0 !important;
+}
+
+.flyer-card {
+    margin: 0.75em 0 !important;
+    background: #0a0808;
+    transition: all 0.7s;
+}
+
+.flyer-card:hover {
+    box-shadow: 0px 10px 20px 1px rgba(255, 255, 255, 0.106) !important;
+    
+}
+
+.card-body {
+    padding: 0.75rem 0 !important;
+}
+
+.card-text {
+    padding: 0.3rem 1rem;
+    font-size: 1rem;
+}
+
+.overFlow {
+    overflow: hidden;
+}
+
+.card-img-top{
+    transition: all 0.7s ease-in-out;
+}
+
+.card-img-top:hover{
+    transform: scale(1.1);
+}
