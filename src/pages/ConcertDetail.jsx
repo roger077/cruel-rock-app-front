@@ -1,11 +1,9 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import FlyerCard from "../components/billboard/FlyerCard"
 import PropTypes from 'prop-types';
 
-function FlyerCard({ title, imgSource, text, url, id }) {
+export default function ConcertDetail({ title, imgSource, text, url, id }) {
   return (
     <article className='flyer-card text-center animate__animated animate__fadeInUp'>
-      <Link to={"/concerts/" + id}>
         <div className='overFlow'>
           <img src={imgSource} alt='' className='card-img-top' />
         </div>
@@ -20,7 +18,6 @@ function FlyerCard({ title, imgSource, text, url, id }) {
             +INFO
           </a>
         </div>
-      </Link>
     </article>
   )
 }
@@ -30,4 +27,3 @@ FlyerCard.propTypes = {
   imgSource: PropTypes.string.isRequired,
   text: PropTypes.string,
 }
-export default FlyerCard

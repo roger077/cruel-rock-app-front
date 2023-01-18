@@ -1,0 +1,148 @@
+const Concerts = [
+  {
+    "date": "2023-03-03",
+    "artists": ["Metallico", "Def Loppard"],
+    "time": "23:00",
+    "adress": "Cochabamba st 666",
+    "city": "Tamangandapio",
+    "ticketPrice": 15,
+    "isFinished": false,
+    "poster_path": require("./flyer1.jpg"),
+    "title_description": "Rock Music Festival",
+    "id": 12
+  },
+  {
+    "date": "2023-11-12",
+    "artists": ["Metallico", "Def Loppard"],
+    "time": "23:00",
+    "adress": "Cochabamba st 666",
+    "city": "Tamangandapio",
+    "ticketPrice": 15,
+    "isFinished": false,
+    "poster_path": require("./flyer2.jpg"),
+    "title_description": "Rock The Stage",
+    "id": 23
+  },
+  {
+    "date": "2023-11-12",
+    "artists": ["Metallico", "Def Loppard"],
+    "time": "23:00",
+    "adress": "Cochabamba st 666",
+    "city": "Tamangandapio",
+    "ticketPrice": 15,
+    "isFinished": false,
+    "poster_path": require("./flyer3.jpg"),
+    "title_description": "Indie Rock concert",
+    "id": 34
+  },
+  {
+    "date": "2023-11-12",
+    "artists": ["Metallico", "Def Loppard"],
+    "time": "23:00",
+    "adress": "Cochabamba st 666",
+    "city": "Tamangandapio",
+    "ticketPrice": 15,
+    "isFinished": false,
+    "poster_path": require("./flyer4.jpg"),
+    "title_description": "Rock Concert",
+    "id": 45
+  },
+  {
+    "date": "2023-11-12",
+    "artists": ["Metallico", "Def Loppard"],
+    "time": "23:00",
+    "adress": "Cochabamba st 666",
+    "city": "Tamangandapio",
+    "ticketPrice": 15,
+    "isFinished": false,
+    "poster_path": require("./flyer5.jpg"),
+    "title_description": "Rock Night Party",
+    "id": 56
+  },
+  {
+    "date": "2023-11-12",
+    "artists": ["Metallico", "Def Loppard"],
+    "time": "23:00",
+    "adress": "Cochabamba st 666",
+    "city": "Tamangandapio",
+    "ticketPrice": 15,
+    "isFinished": false,
+    "poster_path": require("./flyer6.jpg"),
+    "title_description": "Rock N' Roll!",
+    "id": 67
+  },
+  {
+    "date": "2023-11-12",
+    "artists": ["Metallico", "Def Loppard"],
+    "time": "23:00",
+    "adress": "Cochabamba st 666",
+    "city": "Tamangandapio",
+    "ticketPrice": 15,
+    "isFinished": false,
+    "poster_path": require("./flyer7.jpg"),
+    "title_description": "Special Midnight Show",
+    "id": 78
+  },
+  {
+    "date": "2023-11-12",
+    "artists": ["Metallico", "Def Loppard"],
+    "time": "23:00",
+    "adress": "Cochabamba st 666",
+    "city": "Tamangandapio",
+    "ticketPrice": 15,
+    "isFinished": false,
+    "poster_path": require("./flyer8.jpg"),
+    "title_description": "Empty Rooms Performing Live",
+    "id": 89
+  },
+  {
+    "date": "2023-11-12",
+    "artists": ["Metallico", "Def Loppard"],
+    "time": "23:00",
+    "adress": "Cochabamba st 666",
+    "city": "Tamangandapio",
+    "ticketPrice": 15,
+    "isFinished": false,
+    "poster_path": require("./flyer9.jpg"),
+    "title_description": "Vintage RNR Event",
+    "id": 910
+  },
+  {
+    "date": "2023-11-12",
+    "artists": ["Metallico", "Def Loppard"],
+    "time": "23:00",
+    "adress": "Cochabamba st 666",
+    "city": "Tamangandapio",
+    "ticketPrice": 15,
+    "isFinished": false,
+    "poster_path": require("./flyer10.jpg"),
+    "title_description": "World Rock Day Festival",
+    "id": 1011
+  },
+  {
+    "date": "2023-11-12",
+    "artists": ["Metallico", "Def Loppard"],
+    "time": "23:00",
+    "adress": "Cochabamba st 666",
+    "city": "Tamangandapio",
+    "ticketPrice": 15,
+    "isFinished": false,
+    "poster_path": require("./flyer11.jpg"),
+    "title_description": "Indie Night",
+    "id": 1112
+  },
+  {
+    "date": "2023-11-12",
+    "artists": ["Metallico", "Def Loppard"],
+    "time": "23:00",
+    "adress": "Cochabamba st 666",
+    "city": "Tamangandapio",
+    "ticketPrice": 15,
+    "isFinished": false,
+    "poster_path": require("./flyer12.jpg"),
+    "title_description": "Live Music Evening",
+    "id": 23
+  },
+]
+
+export default Concerts
