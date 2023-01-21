@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import './billboard.css';
 
 function FlyerCard({ title, imgSource, text, url, id }) {
   return (
@@ -16,9 +17,9 @@ function FlyerCard({ title, imgSource, text, url, id }) {
               text ? text : 'Lorem Lorem Lorem Lorem Lorem Lorem'
             }
           </p>
-          <a href={url} className='btn btn-outline-secondary rounded-0' target='_blank' rel="noreferrer">
+          {/* <a href={url} className='btn btn-outline-secondary rounded-0' target='_blank' rel="noreferrer">
             +INFO
-          </a>
+          </a> */}
         </div>
       </Link>
     </article>

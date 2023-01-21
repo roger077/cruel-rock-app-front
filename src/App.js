@@ -18,11 +18,8 @@ export default function App() {
         <Navbar />
         <main>
         <Routes>
-        
         <Route exact path="/concerts/:concertId" element={<ConcertDetail />}>Concert</Route>
-
         <Route exact path="/" element={<Main />} />
-            
         </Routes>
         </main>
       </Router>

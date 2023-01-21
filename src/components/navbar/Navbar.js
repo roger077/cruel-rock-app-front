@@ -7,7 +7,7 @@ function Navbar() {
     <nav class="navbar navbar-dark navbar-expand-lg fixed-top">
     {/* <nav class="navbar  fixed-top navbar-expand-lg "> */}
      <div className='container-fluid'>
-        <a className="navbar-brand" href="!#">
+        <a className="navbar-brand" href="/">
             <img src={brandImg} alt="Logo" height="50" className="brand-logo d-inline-block align-text-top"/>
             {/* <img src={brandImg} alt="Logo" width="30" height="24" class="d-inline-block align-text-top"/> */}
         </a>
@@ -22,7 +22,7 @@ function Navbar() {
                         <a class="nav-link active" aria-current="page" href="!#">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="!#">Home</a>
+                        <a class="nav-link active" aria-current="page" href="/">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="!#">Rock Under</a>
@@ -33,12 +33,6 @@ function Navbar() {
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="!#">Nosotros</a>
                     </li>
-                    {/* <li class="nav-item">
-                        <a class="nav-link" href="!#">Link</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                    </li> */}
                 </ul>
             </div>
      </div>

@@ -1,26 +1,32 @@
 import FlyerCard from "../components/billboard/FlyerCard"
 import PropTypes from 'prop-types';
+import Concert from "../utils/flyers/concert";
+import styles from "./ConcertDetail.module.css"
 
-export default function ConcertDetail({ title, imgSource, text, url, id }) {
+export default function ConcertDetail() {
   return (
-    <article className='flyer-card text-center animate__animated animate__fadeInUp'>
-        <div className='overFlow'>
-          <img src={imgSource} alt='' className='card-img-top' />
-        </div>
-        <div className='card-body text-light'>
-          <h4 className='card-title'>{title}</h4>
-          <p className='card-text text-secondary'>
-            {
-              text ? text : 'Lorem Lorem Lorem Lorem Lorem Lorem'
-            }
-          </p>
-          <a href={url} className='btn btn-outline-secondary rounded-0' target='_blank' rel="noreferrer">
-            +INFO
-          </a>
-        </div>
-    </article>
+    <div className={styles.detailContainer} >
+
+      <img src={Concert.poster_path} alt={Concert.title_description} className={`${styles.col} ${styles.movieImg}`} />
+
+
+      <div className={`${styles.col} ${styles.movieDetails}`}>
+        <p><strong>
+          {
+            Concert.artists.map(artist => artist).join(', ')
+          }
+        </strong></p>
+        <p>{Concert.title_description}</p>
+        <ul>
+          <li>Date: { Concert.date } - { Concert.time }Hs.</li>
+          <li> { Concert.adress } - { Concert.city } </li>
+          <li> ${ Concert.ticketPrice } </li>
+        </ul>
+      </div>
+    </div>
   )
 }
+
 FlyerCard.propTypes = {
   title: PropTypes.string.isRequired,
   url: PropTypes.string,
