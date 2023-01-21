@@ -7,7 +7,7 @@ export default function ConcertDetail() {
   return (
     <div className={styles.detailContainer} >
 
-      <img src={Concert.poster_path} alt={Concert.title_description} className={`${styles.col} ${styles.movieImg}`} />
+      <img src={Concert.poster_path} alt={Concert.title_description} className={`${styles.col} ${styles.concertImg}`} />
 
 
       <div className={`${styles.col} ${styles.movieDetails}`}>

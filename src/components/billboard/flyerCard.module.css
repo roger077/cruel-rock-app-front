@@ -1,0 +1,52 @@
+.flyerContainer {
+    background: #0a0808; 
+}
+
+
+.flyerCard {
+/*     margin: 0.75 0 !important;
+    background: #0a0808; */
+    
+    list-style: none;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* .flyerCard:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px 1px rgba(255, 255, 255, 0.106) !important;
+} */
+
+li {
+    list-style: none;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+li a {
+    text-decoration: none;
+    color: #fff;
+  }
+
+.card-body {
+    padding: 0.75rem 0 !important;
+}
+
+.card-text {
+    padding: 0.3rem 1rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.overflow {
+    overflow: hidden;
+}
+
+.cardImgTop{
+    transition: all 0.7s ease-in-out;
+}
+
+.cardImgTop:hover{
+    transform: scale(1.1);
+    box-shadow: 0px 10px 20px 1px rgba(255, 255, 255, 0.106) !important;
+}

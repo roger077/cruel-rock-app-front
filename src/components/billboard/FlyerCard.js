@@ -1,14 +1,29 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import './billboard.css';
+import styles from './flyerCard.module.css';
 
-function FlyerCard({ title, imgSource, text, url, id }) {
+export default function FlyerCard({ title, imgSource, text, id }) {
   return (
-    <article className='flyer-card text-center animate__animated animate__fadeInUp'>
-      <Link to={"/concerts/" + id}>
-        <div className='overFlow'>
-          <img src={imgSource} alt='' className='card-img-top' />
+    <article className={ styles.flyerContainer }>
+      <li className={ styles.flyerCard }>
+        <Link to={"/concerts/:concertId"}>
+          <div className={ styles.overflow }>
+            <img className={ styles.cardImgTop }
+              width={230}
+              height={345}
+              src={imgSource}
+              alt={text} />
+          </div>
+          <div>
+            {title}
+          </div>
+        </Link>
+      </li>
+
+
+
+
+      {/*  <img src={imgSource} alt='' className='card-img-top' />
         </div>
         <div className='card-body text-light'>
           <h4 className='card-title'>{title}</h4>
@@ -16,19 +31,13 @@ function FlyerCard({ title, imgSource, text, url, id }) {
             {
               text ? text : 'Lorem Lorem Lorem Lorem Lorem Lorem'
             }
-          </p>
-          {/* <a href={url} className='btn btn-outline-secondary rounded-0' target='_blank' rel="noreferrer">
-            +INFO
-          </a> */}
-        </div>
-      </Link>
+          </p> */}
+
     </article>
   )
 }
 FlyerCard.propTypes = {
   title: PropTypes.string.isRequired,
-  url: PropTypes.string,
   imgSource: PropTypes.string.isRequired,
   text: PropTypes.string,
 }
-export default FlyerCard

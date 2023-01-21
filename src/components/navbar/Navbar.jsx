@@ -1,5 +1,5 @@
 import React from 'react';
-import './navbar.css';
+import './navbar.module.css';
 import brandImg from '../../assets/brand-logo/cruelRockLogo.png';
 
 function Navbar() {
@@ -31,7 +31,7 @@ function Navbar() {
                         <a class="nav-link active" aria-current="page" href="!#">Relatos Gustaveros</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="!#">Nosotros</a>
+                        <a class="nav-link active" aria-current="page" href="/about">Nosotros</a>
                     </li>
                 </ul>
             </div>

@@ -1,0 +1,13 @@
+.billboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 230px);
+    gap: 40px;
+    padding: 0 20px;
+    justify-content: center;
+}
+
+@media (max-width: 560px) {
+    .billboard {
+        grid-template-columns: 100%;
+    }
+}
