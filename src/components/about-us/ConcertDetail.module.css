@@ -4,8 +4,6 @@
     flex-wrap: wrap;
 }
 
-
-
 .col {
     max-width: 400px;
     width: auto;
@@ -27,4 +25,11 @@ li {
 .concertImg {
     background-color: azure;
     height: 75vh;
+}
+
+@media (max-width: 560px) {
+    .col {
+        width: 90%;
+        height: auto;
+    }
 }

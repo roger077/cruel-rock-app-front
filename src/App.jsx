@@ -8,7 +8,7 @@ import {
   Route,
 } from "react-router-dom";
 import styles from './App.module.css';
-import ConcertDetail from './pages/ConcertDetail';
+import ConcertDetail from './pages/concert-detail/ConcertDetail';
 
 
 export default function App() {

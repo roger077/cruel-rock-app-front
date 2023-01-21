@@ -1,0 +1,11 @@
+.aboutGrid {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+@media (max-width: 560px) {
+    .aboutGrid {
+        grid-template-columns: 100%;
+    }
+}

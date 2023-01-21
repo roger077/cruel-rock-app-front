@@ -1,4 +1,4 @@
-.aboutContainer {
+.detailContainer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -13,7 +13,7 @@
     /* height: 20%; */
 }
 
-.aboutDetails {
+.movieDetails {
     font-size: 1.4rem;
     text-align: left;
 }
@@ -22,10 +22,9 @@ li {
     list-style: none;
 }
 
-.aboutImg {
-    width: 230px;
-    height: auto;
+.concertImg {
     background-color: azure;
+    height: 75vh;
 }
 
 @media (max-width: 560px) {
@@ -34,4 +33,3 @@ li {
         height: auto;
     }
 }
-

@@ -1,11 +1,11 @@
-import FlyerCard from "../components/billboard/FlyerCard"
+import FlyerCard from "../../components/billboard/FlyerCard"
 import PropTypes from 'prop-types';
-import Concert from "../utils/flyers/concert";
+import Concert from "../../utils/flyers/concert";
 import styles from "./ConcertDetail.module.css"
 
 export default function ConcertDetail() {
   return (
-    <div className={styles.detailContainer} >
+    <section className={styles.detailContainer} >
 
       <img src={Concert.poster_path} alt={Concert.title_description} className={`${styles.col} ${styles.concertImg}`} />
 
@@ -23,7 +23,7 @@ export default function ConcertDetail() {
           <li> ${ Concert.ticketPrice } </li>
         </ul>
       </div>
-    </div>
+    </section>
   )
 }
 
