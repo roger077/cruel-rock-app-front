@@ -1,5 +1,11 @@
 .flyerContainer {
-    background: #0a0808; 
+    background: #0a0808;
+    height:fit-content;
+    transition: all 0.7s ease-in-out;
+}
+
+.flyerContainer:hover {
+    box-shadow: 0px 10px 20px 1px rgba(255, 255, 255, 0.106) !important;
 }
 
 .flyerCard {
@@ -29,7 +35,10 @@ li a {
 
 .cardImg:hover{
     transform: scale(1.1);
-    box-shadow: 0px 10px 20px 1px rgba(255, 255, 255, 0.106) !important;
+}
+
+.flyerInfo{
+    align-items: center;
 }
 
 @media (max-width: 560px) {

@@ -12,7 +12,7 @@ export default function FlyerCard({ title, imgSource, text, id }) {
               src={imgSource}
               alt={text} />
           </div>
-          <div>
+          <div className={ styles.flyerInfo }>
             {title}
           </div>
         </Link>

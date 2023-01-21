@@ -1,7 +1,7 @@
 import FlyerCard from "../../components/billboard/FlyerCard"
 import PropTypes from 'prop-types';
 import Concert from "../../utils/flyers/concert";
-import styles from "./ConcertDetail.module.css"
+import styles from "./concertDetail.module.css"
 
 export default function ConcertDetail() {
   return (
@@ -10,8 +10,8 @@ export default function ConcertDetail() {
       <img src={Concert.poster_path} alt={Concert.title_description} className={`${styles.col} ${styles.concertImg}`} />
 
 
-      <div className={`${styles.col} ${styles.movieDetails}`}>
-        <p><strong>
+      <div className={`${styles.col} ${styles.concertDetails}`}>
+        <p className={ styles.artistsArr }><strong>
           {
             Concert.artists.map(artist => artist).join(', ')
           }

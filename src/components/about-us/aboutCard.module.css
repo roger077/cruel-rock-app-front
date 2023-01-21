@@ -1,21 +1,27 @@
 .aboutContainer {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-wrap: wrap;
+    padding: 0 30px;
 }
 
 .col {
     max-width: 400px;
     width: auto;
     margin: 15px;
-    /* height: auto; */
-    /* Creo que no es necesario en éste caso */
-    /* height: 20%; */
 }
 
 .aboutDetails {
     font-size: 1.4rem;
     text-align: left;
+    margin: 0;
+    padding: 0;
+}
+
+.aboutDetails :first-child{
+    margin: 0;
+    padding: 0;
 }
 
 li {
@@ -31,7 +37,6 @@ li {
 @media (max-width: 560px) {
     .col {
         width: 90%;
-        height: auto;
     }
 }
 

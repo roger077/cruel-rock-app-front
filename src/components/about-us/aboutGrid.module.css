@@ -4,8 +4,13 @@
     padding: 0 20px;
 }
 
+.cruelInfo {
+    padding: 30px 0 0 0;
+    text-align: center;
+}
+
 @media (max-width: 560px) {
     .aboutGrid {
-        grid-template-columns: 100%;
+        display: block;
     }
 }
