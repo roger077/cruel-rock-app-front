@@ -1,14 +1,14 @@
-import React from 'react'
+
 import Navbar from './components/navbar/Navbar';
-import Main from './pages/main/Main';
-import About from './pages/about/About';
-import Login from './pages/login/Login';
 import {
   BrowserRouter as Router,
   Routes,
   Route,
 } from "react-router-dom";
 import styles from './App.module.css';
+import Main from './pages/main/Main';
+import About from './pages/about/About';
+import Login from './pages/login/Login';
 import ConcertDetail from './pages/concert-detail/ConcertDetail';
 
 
