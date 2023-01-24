@@ -8,7 +8,6 @@ import {
 import styles from './App.module.css';
 import Main from './pages/main/Main';
 import About from './pages/about/About';
-import Login from './pages/login/Login';
 import ConcertDetail from './pages/concert-detail/ConcertDetail';
 
 
@@ -22,7 +21,6 @@ export default function App() {
         <Route exact path="/concerts/:concertId" element={<ConcertDetail />}>Concert</Route>
         <Route exact path="/" element={<Main />} />
         <Route exact path="/about" element={<About />} />
-        <Route exact path="/login" element={<Login />} />
         </Routes>
         </main>
       </Router>

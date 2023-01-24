@@ -1,5 +1,7 @@
 {
     "emmet.preferences": {
         "javascript": "javascriptreact"
-    }
+    },
+    "editor.fontFamily": "Cascadia Code",
+    "editor.fontLigatures": true
 }
