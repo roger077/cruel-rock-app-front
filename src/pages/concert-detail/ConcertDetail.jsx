@@ -1,7 +1,7 @@
 import FlyerCard from "../../components/billboard/FlyerCard"
 import PropTypes from 'prop-types';
 import Concert from "../../utils/flyers/concert";
-import styles from "./concertDetail.module.css"
+import styles from "./ConcertDetail.module.css"
 
 export default function ConcertDetail() {
   return (

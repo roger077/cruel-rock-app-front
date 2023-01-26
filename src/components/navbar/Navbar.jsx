@@ -7,7 +7,7 @@ import GoogleLogin from 'react-google-login';
 
 
 export default function Navbar() {
-    const clientID = '181666353931-h3gpnop14fdvheg7dr5svaopcbafj895.apps.googleusercontent.com';
+    const clientID = process.env.CLIENT_ID;
     const [ user, setUser] =useState({});
 
 
@@ -20,11 +20,13 @@ export default function Navbar() {
         gapi.load("client:auth2", start)
     },[])
 
+
     const onSuccess = (response) => {
+        console.log(response)
         setUser(response.profileObj)
     }
 
-    
+     
     const onFailure = () => {
         console.log("Something went wrong, dude")
     }
@@ -57,7 +59,7 @@ export default function Navbar() {
                             <a className="nav-link active" aria-current="page" href="/about">Nosotros</a>
                         </li>
                     </ul>
-                    <div className={user? "profile":"hidden"}>
+                    <div className={user.googleId? "profile":"hidden"}>
                         <img src={ user.imageUrl } alt="" />
                         <h4>{ user.name }</h4>
                     </div>
