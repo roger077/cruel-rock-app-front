@@ -1,0 +1,1 @@
+export const CLIENT_ID_OAUTH2="181666353931-h3gpnop14fdvheg7dr5svaopcbafj895.apps.googleusercontent.com"

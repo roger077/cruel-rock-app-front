@@ -3,18 +3,18 @@ import './navbar.module.css';
 import brandImg from '../../assets/brand-logo/cruelRockLogo.png';
 import { gapi } from 'gapi-script';
 import GoogleLogin from 'react-google-login';
-
+import {CLIENT_ID_OAUTH2} from "../../config.js"
 
 
 export default function Navbar() {
-    const clientID = process.env.CLIENT_ID;
+    
     const [ user, setUser] =useState({});
 
 
     useEffect(()=>{
         const start = () => {
             gapi.auth2.init({
-                clientId: clientID,
+                clientId: CLIENT_ID_OAUTH2,
             })
         }
         gapi.load("client:auth2", start)
@@ -65,7 +65,7 @@ export default function Navbar() {
                     </div>
                     <div>
                             <GoogleLogin 
-                                clientId={clientID}
+                                clientId={CLIENT_ID_OAUTH2}
                                 onSuccess={onSuccess}
                                 onFailure={onFailure}
                                 cookiePolicy={"sigle_host_policy"}
